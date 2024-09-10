@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Language Learning Game</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .game-section {
+      padding: 20px;
+    }
+    .language-select {
+      margin-bottom: 20px;
+    }
+    .answer-btn {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 200px;
+    }
+    .answer-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Language Learning Game</h1>
+    <p>Select a language and start learning!</p>
+  </header>
+
+  <div class="language-select">
+    <label for="language">Choose Language:</label>
+    <select id="language">
+      <option value="en">English</option>
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+    </select>
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <section class="game-section">
+    <div id="question-container">
+      <h2 id="question"></h2>
+      <div id="answers"></div> <!-- Container for answer buttons -->
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Language Learning Game. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JavaScript file -->
+  <script src="same.js"></script>
+</body>
+</html>
